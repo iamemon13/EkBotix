@@ -3,127 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EkBotix - Information Technology and Software Services</title>
+    <title>EkBotix - IT & Software Services</title>
+    <!-- Tailwind CSS for Modern Styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --primary-color: #1E293B; 
-            --secondary-color: #3B82F6; 
-            --bg-color: #F8FAFC; 
-            --text-color: #334155; 
-        }
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            color: var(--text-color); 
-            background-color: var(--bg-color); 
-            line-height: 1.6; 
-        }
-        
-        /* Banner and Logo Section (Updated to banner.png) */
-        .hero-section { 
-            background: linear-gradient(rgba(30, 41, 59, 0.75), rgba(30, 41, 59, 0.85)), url('banner.png') no-repeat center center/cover; 
-            color: #fff; 
-            padding: 5rem 1rem; 
-            text-align: center; 
-        }
-        .logo {
-            max-height: 130px;
-            margin-bottom: 1.5rem;
-            border-radius: 12px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-        }
-        .hero-section h1 { 
-            margin: 0; 
-            font-size: 3.5rem; 
-            letter-spacing: 1px; 
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-        }
-        .hero-section p { 
-            font-size: 1.2rem; 
-            color: #E2E8F0; 
-            margin-top: 10px; 
-        }
-
-        /* Container & Cards */
-        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; }
-        .section-title { font-size: 2rem; color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 2rem; }
-        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
-        .service-card { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary-color); transition: transform 0.3s ease; }
-        .service-card:hover { transform: translateY(-5px); }
-        .service-card h3 { margin-top: 0; color: var(--primary-color); }
-        
-        /* Contact Section */
-        .contact-section { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; border-left: 4px solid var(--secondary-color); }
-        .contact-info { flex: 1; min-width: 300px; }
-        .contact-info p { margin: 0.5rem 0; font-weight: 500; }
-        .contact-info span { color: #64748B; font-weight: 400; }
-        
-        /* Footer */
-        footer { background-color: var(--primary-color); color: #94A3B8; text-align: center; padding: 1.5rem; margin-top: 2rem; font-size: 0.9rem; }
-        a { color: var(--secondary-color); text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-800">
 
-    <!-- Header with Banner and Logo -->
-    <header class="hero-section">
-        <img src="logo.png" alt="EkBotix Logo" class="logo">
-        <h1>EkBotix</h1>
-        <p>Information Technology and Software Services</p>
+    <!-- Premium Hero Section -->
+    <header class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-24 px-4 text-center shadow-2xl relative overflow-hidden">
+        <div class="max-w-4xl mx-auto relative z-10">
+            <img src="logo.png" alt="EkBotix Logo" class="h-32 mx-auto mb-6 rounded-2xl shadow-2xl border-4 border-white/10 bg-white p-2">
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-4 drop-shadow-lg">EkBotix</h1>
+            <p class="text-xl md:text-2xl text-blue-200 font-light tracking-wide">Information Technology and Software Services</p>
+        </div>
+        <!-- Decorative Background Element -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] pointer-events-none"></div>
     </header>
 
-    <div class="container">
+    <!-- Main Content -->
+    <main class="max-w-6xl mx-auto px-4 py-16 space-y-20 -mt-10 relative z-20">
+        
         <!-- About Section -->
-        <div>
-            <h2 class="section-title">Who We Are</h2>
-            <p>EkBotix is a modern technology firm specializing in custom software solutions, automated bot development, and data-driven applications. We aim to streamline business operations through robust, scalable, and secure IT services.</p>
-        </div>
-
-        <br><br>
+        <section class="bg-white rounded-3xl shadow-xl border border-slate-100 p-10 md:p-16 text-center">
+            <h2 class="text-3xl font-bold text-slate-900 mb-6 inline-block border-b-4 border-blue-500 pb-2">Who We Are</h2>
+            <p class="text-slate-600 leading-relaxed max-w-4xl mx-auto text-lg md:text-xl font-light">
+                EkBotix is a modern technology firm specializing in custom software solutions, automated bot development, and data-driven applications. We aim to streamline business operations through robust, scalable, and secure IT services.
+            </p>
+        </section>
 
         <!-- Services Section -->
-        <div>
-            <h2 class="section-title">Our Expertise</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Software & Bot Development</h3>
-                    <p>Developing robust automated applications, web bots, and custom scripts using modern frameworks to automate complex workflows and improve efficiency.</p>
+        <section>
+            <h2 class="text-3xl font-bold text-slate-900 mb-12 text-center">Our Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Software & Bots</h3>
+                    <p class="text-slate-600 leading-relaxed">Developing robust automated applications, web bots, and custom scripts using modern frameworks to improve efficiency.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Database & Analytics</h3>
-                    <p>Designing sophisticated database architectures, performing advanced SQL data analytics, and managing secure cloud deployments for data integrity.</p>
+                <!-- Service 2 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">Database & Analytics</h3>
+                    <p class="text-slate-600 leading-relaxed">Designing sophisticated database architectures, performing advanced SQL data analytics, and secure cloud deployments.</p>
                 </div>
-                <div class="service-card">
-                    <h3>API & Cloud Integrations</h3>
-                    <p>Seamlessly connecting applications through custom API development, webhooks, and scalable cloud hosting infrastructure.</p>
-                </div>
-            </div>
-        </div>
-
-        <br><br>
-
-        <!-- Contact & Business Info Section -->
-        <div>
-            <h2 class="section-title">Business Information</h2>
-            <div class="contact-section">
-                <div class="contact-info">
-                    <p>Proprietor: <span>Emon Khan</span></p>
-                    <p>Trade License No: <span>2024202500190003</span></p>
-                    <p>Business Type: <span>IT and Software Services</span></p>
-                </div>
-                <div class="contact-info">
-                    <p>Email: <span><a href="mailto:contact@ekbotix.com">contact@ekbotix.com</a></span></p>
-                    <p>Phone: <span>+8801748231123</span></p>
-                    <p>Address: <span>Shantiganj Bazar, Shantiganj, Sunamganj - 6683, Sylhet, Bangladesh</span></p>
+                <!-- Service 3 -->
+                <div class="bg-white p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-slate-100 hover:-translate-y-2 group">
+                    <div class="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-semibold text-slate-900 mb-4">API Integrations</h3>
+                    <p class="text-slate-600 leading-relaxed">Seamlessly connecting applications through custom API development, webhooks, and scalable cloud hosting infrastructure.</p>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
 
-    <footer>
-        &copy; 2026 EkBotix. All Rights Reserved.
+        <!-- Business Info Section (Crucial for DUNS) -->
+        <section class="bg-slate-900 text-white rounded-3xl p-10 md:p-16 shadow-2xl relative overflow-hidden">
+            <div class="relative z-10">
+                <h2 class="text-3xl font-bold mb-10 border-b-2 border-slate-700 pb-4 inline-block">Business Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold mb-1">Proprietor</p>
+                            <p class="text-xl font-medium">Emon Khan</p>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold mb-1">Trade License No</p>
+                            <p class="text-xl font-medium text-blue-300">2024202500190003</p>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold mb-1">Business Type</p>
+                            <p class="text-xl font-medium">IT and Software Services</p>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div>
+                            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold mb-1">Email</p>
+                            <a href="mailto:contact@ekbotix.com" class="text-xl font-medium text-blue-400 hover:text-blue-300 transition-colors">contact@ekbotix.com</a>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold mb-1">Phone</p>
+                            <p class="text-xl font-medium">+8801748231123</p>
+                        </div>
+                        <div>
+                            <p class="text-slate-400 text-sm uppercase tracking-widest font-semibold mb-1">Registered Address</p>
+                            <p class="text-lg font-medium text-slate-300 leading-relaxed">Shantiganj Bazar, Shantiganj, Sunamganj - 6683,<br>Sylhet, Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-10 text-slate-500 text-sm mt-12">
+        <p>&copy; 2026 EkBotix. All Rights Reserved.</p>
     </footer>
 
 </body>
