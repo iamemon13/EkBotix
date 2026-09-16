@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EkBotix - Information Technology and Software Services</title>
+    <style>
+        :root { --primary-color: #1E293B; --secondary-color: #3B82F6; --bg-color: #F8FAFC; --text-color: #334155; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: var(--text-color); background-color: var(--bg-color); line-height: 1.6; }
+        header { background-color: var(--primary-color); color: #fff; padding: 4rem 1rem; text-align: center; }
+        header h1 { margin: 0; font-size: 3rem; letter-spacing: 1px; }
+        header p { font-size: 1.2rem; color: #CBD5E1; margin-top: 10px; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 3rem 1.5rem; }
+        .section-title { font-size: 2rem; color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); display: inline-block; padding-bottom: 0.5rem; margin-bottom: 2rem; }
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .service-card { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border-top: 4px solid var(--secondary-color); }
+        .service-card h3 { margin-top: 0; color: var(--primary-color); }
+        .contact-section { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-top: 2rem; display: flex; flex-wrap: wrap; gap: 2rem; justify-content: space-between; }
+        .contact-info { flex: 1; min-width: 300px; }
+        .contact-info p { margin: 0.5rem 0; font-weight: 500; }
+        .contact-info span { color: #64748B; font-weight: 400; }
+        footer { background-color: var(--primary-color); color: #94A3B8; text-align: center; padding: 1.5rem; margin-top: 2rem; font-size: 0.9rem; }
+        a { color: var(--secondary-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>EkBotix</h1>
+        <p>Information Technology and Software Services</p>
+    </header>
+
+    <div class="container">
+        <!-- About Section -->
+        <div>
+            <h2 class="section-title">Who We Are</h2>
+            <p>EkBotix is a modern technology firm specializing in custom software solutions, automated bot development, and data-driven applications. We aim to streamline business operations through robust, scalable, and secure IT services.</p>
+        </div>
+
+        <br><br>
+
+        <!-- Services Section -->
+        <div>
+            <h2 class="section-title">Our Expertise</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Software & Bot Development</h3>
+                    <p>Developing robust automated applications, web bots, and custom scripts using modern frameworks to automate complex workflows and improve efficiency.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Database & Analytics</h3>
+                    <p>Designing sophisticated database architectures, performing advanced SQL data analytics, and managing secure cloud deployments for data integrity.</p>
+                </div>
+                <div class="service-card">
+                    <h3>API & Cloud Integrations</h3>
+                    <p>Seamlessly connecting applications through custom API development, webhooks, and scalable cloud hosting infrastructure.</p>
+                </div>
+            </div>
+        </div>
+
+        <br><br>
+
+        <!-- Contact & Business Info Section (Crucial for DUNS) -->
+        <div>
+            <h2 class="section-title">Business Information</h2>
+            <div class="contact-section">
+                <div class="contact-info">
+                    <p>Proprietor: <span>Emon Khan</span></p>
+                    <p>Trade License No: <span>2024202500190003</span></p>
+                    <p>Business Type: <span>IT and Software Services</span></p>
+                </div>
+                <div class="contact-info">
+                    <p>Email: <span><a href="mailto:contact@ekbotix.com">contact@ekbotix.com</a></span></p>
+                    <p>Phone: <span>+8801748231123</span></p>
+                    <p>Address: <span>Shantiganj Bazar, Shantiganj, Sunamganj - 6683, Sylhet, Bangladesh</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2026 EkBotix. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
+
